@@ -1,0 +1,17 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+logs/
+*.log
+
+# Optional OS junk
+.DS_Store
+Thumbs.db
+
+# Coverage / build files
+coverage/
+dist/
