@@ -586,13 +586,19 @@ const SignupPage = ({ onPageChange, onLogin }) => {
 
         <div className="auth-content">
           <div className="auth-form-container">
-            <div className="auth-form-header">
+            {/* <div className="auth-form-header">
               <div className="welcome-animation">
                 <div className="welcome-icon">🚀</div>
                 <h1>Start Your Success Journey!</h1>
                 <p>Join thousands of students who've landed their dream jobs. Create your free account and begin preparing today!</p>
               </div>
-            </div>
+            </div> */}
+            <div className="auth-form-header">
+              <div className="welcome-icon rocket">🚀</div>
+                 <h1>Start Your Success Journey!</h1>
+                  <p>Join thousands of students who've landed their dream jobs. Create your free account and begin preparing today!</p>
+              </div>
+
 
             <form className="auth-form" onSubmit={handleSubmit}>
               {errors.general && (

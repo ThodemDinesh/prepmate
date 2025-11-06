@@ -12,7 +12,7 @@ const Header = ({ onPageChange, user, onLogout }) => {
           <a href="#features" className="nav-link">Features</a>
           <a href="#how-it-works" className="nav-link">How It Works</a>
           <a href="#testimonials" className="nav-link">Reviews</a>
-          {/* <a href="#pricing" className="nav-link">Pricing</a> */}
+         
         </nav>
         <div className="header-actions">
           {user ? (

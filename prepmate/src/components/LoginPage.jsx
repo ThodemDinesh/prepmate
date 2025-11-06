@@ -281,6 +281,14 @@
 // };
 
 // export default LoginPage;
+
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 import '../styles/Auth.css';
 
@@ -396,13 +404,10 @@ const LoginPage = ({ onPageChange, onLogin }) => {
         <div className="auth-content">
           <div className="auth-form-container">
             <div className="auth-form-header">
-              <div className="welcome-animation">
-                <div className="welcome-icon">👋</div>
+            < div className="welcome-icon hand">👋</div>
                 <h1>Welcome Back!</h1>
                 <p>Ready to continue your journey to landing your dream job? Let's get you signed in.</p>
               </div>
-            </div>
-
             <form className="auth-form" onSubmit={handleSubmit}>
               {errors.general && (
                 <div className="error-banner" style={{ 

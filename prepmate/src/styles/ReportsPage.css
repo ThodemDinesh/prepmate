@@ -644,48 +644,48 @@ body {
   gap: var(--space-4);
 }
 
-.next-step-item {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-4);
-  padding: var(--space-5);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--glass-thick);
-  border-radius: var(--radius-xl);
-  transition: all var(--duration-200) var(--ease-out);
-  position: relative;
-  overflow: hidden;
-}
+  .next-step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-5);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--glass-thick);
+    border-radius: var(--radius-xl);
+    transition: all var(--duration-200) var(--ease-out);
+    position: relative;
+    overflow: hidden;
+  }
 
-.next-step-item::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(180deg, var(--primary-500), var(--primary-600));
-  transform: scaleY(0);
-  transition: transform var(--duration-200) var(--ease-out);
-}
+  .next-step-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary-500), var(--primary-600));
+    transform: scaleY(0);
+    transition: transform var(--duration-200) var(--ease-out);
+  }
 
-.next-step-item:hover {
-  background: rgba(255, 255, 255, 0.08);
-  transform: translateY(-1px);
-  box-shadow: var(--shadow-md);
-}
+  .next-step-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+  }
 
-.next-step-item:hover::before {
-  transform: scaleY(1);
-}
+  .next-step-item:hover::before {
+    transform: scaleY(1);
+  }
 
-.step-icon {
-  font-size: var(--text-2xl);
-  background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  flex-shrink: 0;
+  .step-icon {
+    font-size: var(--text-2xl);
+    /* background: linear-gradient(135deg, var(--primary-500), var(--primary-600)); */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    flex-shrink: 0;
 }
 
 .step-content strong {

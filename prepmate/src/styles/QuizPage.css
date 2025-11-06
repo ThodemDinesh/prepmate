@@ -1,4 +1,4 @@
-/* QuizPage.css - Modern Quiz Interface */
+QuizPage.css - Modern Quiz Interface
 
 .quiz-page {
   min-height: 100vh;
@@ -21,14 +21,20 @@
   z-index: 100;
 }
 
+/* General styles for the H1 container */
 .header-left h1 {
   margin: 0 0 0.25rem 0;
   font-size: 1.5rem;
   font-weight: 700;
+  /* The color property no longer interferes with the gradient */
+}
+
+/* Gradient effect applied ONLY to the text inside the span */
+.header-left .gradient-text {
   background: linear-gradient(135deg, #6366F1, #FF6B35);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header-left p {
@@ -424,6 +430,8 @@
   transition: all 0.3s ease;
   text-align: left;
   position: relative;
+  /* --- FIX: Add this line --- */
+  color: #e2e8f0; /* A light, readable color for dark backgrounds */
 }
 
 .answer-option:hover:not(:disabled) {
@@ -493,7 +501,6 @@
 .answer-option.wrong .option-icon {
   color: #ef4444;
 }
-
 /* Answer Feedback */
 .answer-feedback {
   background: rgba(51, 65, 85, 0.3);
@@ -746,5 +753,54 @@
   
   .results-actions {
     flex-direction: column;
+  }
+}
+/* Quiz Navigation - Leave Quiz Button */
+.quiz-navigation {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.leave-quiz-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: #ef4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.leave-quiz-btn:hover {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.5);
+  color: #ef4444;
+  transform: translateY(-1px);
+}
+
+.leave-quiz-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.leave-quiz-btn:hover svg {
+  transform: translateX(-2px);
+}
+
+/* Responsive updates */
+@media (max-width: 768px) {
+  .quiz-navigation {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .leave-quiz-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
   }
 }

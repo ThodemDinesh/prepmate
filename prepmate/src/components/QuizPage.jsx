@@ -80,7 +80,7 @@ const QuizPage = ({ user, onNavigate, onLogout }) => {
     setSelectedAnswer(answer);
   };
 
-  // FIXED: Submit answer and show feedback
+  // Submit answer and show feedback
   const submitAnswer = () => {
     if (!selectedAnswer) return;
     
@@ -116,7 +116,7 @@ const QuizPage = ({ user, onNavigate, onLogout }) => {
     }
   };
 
-  // FIXED: Calculate quiz results properly (no double counting)
+  // Calculate quiz results properly
   const calculateResults = () => {
     const totalQuestions = questions.length;
     
@@ -215,6 +215,17 @@ const QuizPage = ({ user, onNavigate, onLogout }) => {
     setQuizResults(null);
   };
 
+  // Handle leaving quiz with confirmation
+  const handleLeaveQuiz = () => {
+    const sure = window.confirm(
+      "Are you sure you want to leave the quiz? Your progress will be lost and cannot be recovered."
+    );
+    if (sure) {
+      startNewQuiz(); // Reset quiz state
+      onNavigate('dashboard'); // Navigate back to dashboard
+    }
+  };
+
   const currentQuestion = questions[currentQuestionIndex];
   const progress = questions.length > 0 ? ((currentQuestionIndex + 1) / questions.length) * 100 : 0;
 
@@ -223,7 +234,7 @@ const QuizPage = ({ user, onNavigate, onLogout }) => {
       {/* Header */}
       <header className="quiz-header">
         <div className="header-left">
-          <h1>📝 AI Quiz Practice</h1>
+          <h1>📝 <span className="gradient-text">AI Quiz Practice</span></h1>
           <p>Master your skills with intelligent questions</p>
         </div>
         <div className="header-right">
@@ -349,6 +360,20 @@ const QuizPage = ({ user, onNavigate, onLogout }) => {
               </div>
             </div>
 
+            {/* Leave Quiz Button */}
+            <div className="quiz-navigation">
+              <button
+                className="leave-quiz-btn"
+                onClick={handleLeaveQuiz}
+                title="Leave quiz and return to dashboard"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 12H5M12 19L5 12L12 5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                Leave Quiz
+              </button>
+            </div>
+
             {/* Question Card */}
             <div className="question-card">
               <div className="question-header">
@@ -452,17 +477,6 @@ const QuizPage = ({ user, onNavigate, onLogout }) => {
                   <div className="stat-label">Total</div>
                 </div>
               </div>
-
-              {/* Debug Info (Remove in production) */}
-              {/* <div className="debug-info" style={{background: 'rgba(51, 65, 85, 0.5)', padding: '1rem', borderRadius: '8px', marginBottom: '1rem', fontSize: '0.8rem', border: '1px solid rgba(148, 163, 184, 0.1)'}}>
-                <h4 style={{margin: '0 0 0.5rem 0', color: '#e2e8f0'}}>Debug Information:</h4>
-                <p style={{margin: '0.25rem 0', color: '#94a3b8'}}>Questions Generated: {questions.length}</p>
-                <p style={{margin: '0.25rem 0', color: '#94a3b8'}}>Answers Recorded: {quizResults.answers.length}</p>
-                <p style={{margin: '0.25rem 0', color: '#94a3b8'}}>Calculation: {quizResults.correctAnswers}/{quizResults.totalQuestions} = {quizResults.score}%</p>
-                <p style={{margin: '0.25rem 0', color: quizResults.correctAnswers === quizResults.totalQuestions && quizResults.score === 100 ? '#10b981' : '#ef4444'}}>
-                  Status: {quizResults.correctAnswers === quizResults.totalQuestions && quizResults.score === 100 ? '✅ Calculation Correct' : '❌ Check Calculation'}
-                </p>
-              </div> */}
 
               <div className="results-actions">
                 <button className="new-quiz-btn" onClick={startNewQuiz}>

@@ -219,20 +219,6 @@ const LandingPage = ({ onPageChange, user, onLogout }) => {
             <p className={`hero-subtitle ${isSubtitleVisible ? 'fade-in' : 'fade-out'}`}>
               {heroSubtitles[currentSubtitleIndex]}
             </p>
-            <div className="hero-buttons">
-              <button 
-                className="btn btn-primary"
-                onClick={() => onPageChange('signup')}
-              >
-                Start Preparing Free
-              </button>
-              <button 
-                className="btn btn-secondary"
-                onClick={() => onPageChange('login')}
-              >
-                Sign In
-              </button>
-            </div>
             <div className="hero-stats">
               <div className="stat">
                 <span className="stat-number">50K+</span>
@@ -290,7 +276,7 @@ const LandingPage = ({ onPageChange, user, onLogout }) => {
         </div>
       </section>
 
-      {/* Enhanced How It Works Section */}
+      {/* How It Works Section */}
       <section className="how-it-works-section" id="how-it-works">
         <div className="container">
           <h2 className="section-title">How It Works</h2>
@@ -335,9 +321,6 @@ const LandingPage = ({ onPageChange, user, onLogout }) => {
               <h3 className="step-title">Land Your Job</h3>
               <p className="step-description">Apply your enhanced skills and confidence to ace your interviews and secure offers at top companies</p>
             </div>
-          </div>
-          <div className="progress-flow">
-            <div className="flow-line"></div>
           </div>
         </div>
       </section>

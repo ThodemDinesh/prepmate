@@ -66,7 +66,8 @@ Do not include any markdown formatting, explanatory text, or anything other than
             content: prompt
           }
         ],
-        model: "llama3-8b-8192",
+        // model: "llama3-8b-8192",
+        model: "llama-3.3-70b-versatile",
         temperature: 0.7,
         max_tokens: Math.max(2000, numQuestions * 300), // Ensure enough tokens
       });
