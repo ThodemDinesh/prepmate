@@ -233,15 +233,7 @@ To ensure a smooth and accurate user experience:
 
 ---
 
-## 👨‍💻 Contributors
 
-* **Team PrepMate**
-
-  * 22BIT0197
-  * 22BIT0248
-  * 22BIT0288
-
----
 
 ## 🏁 License
 
