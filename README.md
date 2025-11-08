@@ -1,3 +1,4 @@
+
 <!-- PREPAMATE
 This is a resource which helps people who are students ,who aer working professionals trying to shift jobs to test their skills by the ai interviews ,which gives a detailed report which makes the user understand the strenghts and their weeknesses ans also suggests users on which they have to improve .
 In total we have 4 modules 
@@ -35,7 +36,6 @@ Future Enhancements :
 4.Add features like search jobs related to the uploaded resume and also exclusive contact of the poeple in the companies to contact for referals -->
 
 
-```markdown
 # 🧠 PrepMate
 
 **PrepMate** is an AI-powered preparation assistant designed for **students** and **working professionals** aiming to test, enhance, and track their skills through **AI Interviews, Quizzes, Resume Analysis, and Resource Learning** — all in one place.  
@@ -104,8 +104,7 @@ PrepMate consists of **4 key modules**:
 
 ## 🛠️ Folder Structure
 
-```
-
+```bash
 PrepMate/
 │
 ├── prepmate/              # Frontend (React App)
@@ -123,78 +122,4 @@ PrepMate/
 │   └── ...
 │
 └── README.md
-
-````
-
----
-
-## 🖥️ How to Run Locally
-
-Follow these simple steps to get started:
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/yourusername/prepmate.git
-cd prepmate
-````
-
-### 2️⃣ Run the Frontend
-
-```bash
-cd prepmate
-npm install
-npm start
-```
-
-The frontend should now run at:
-👉 `http://localhost:3000`
-
-### 3️⃣ Run the Backend
-
-Open a new terminal and run:
-
-```bash
-cd prepmate-backend
-npm install
-npm start
-```
-
-The backend will typically run at:
-👉 `http://localhost:5000`
-
----
-
-## 🧠 Future Enhancements
-
-We’re continuously improving PrepMate. Upcoming features include:
-
-1. 📚 Adding **more subjects** and expanding topic coverage.
-2. 🗣️ Integrating **speech-to-text** and **text-to-speech APIs** for a realistic interview feel.
-3. 🧵 Making **resources dynamically update** based on user feedback.
-4. 💼 Integrating a **job search and referral feature**:
-
-   * Suggests jobs based on the uploaded resume.
-   * Provides exclusive contact links for employee referrals.
-
----
-
-## 💡 Vision
-
-PrepMate aims to become the **go-to AI-powered skill development companion** — combining the interactivity of interviews, the gamification of learning, and the intelligence of resume insights to create a **personalized growth ecosystem** for every learner and professional.
-
----
-
-
-
-## 🏁 License
-
-This project is licensed under the **MIT License** — feel free to use, modify, and distribute with attribution.
-
----
-
-✨ *PrepMate – Practice. Improve. Succeed.* ✨
-
-```
-
----
-```
+>>>>>>> 44f723b (Fixed README formatting and structure):Readme.md
