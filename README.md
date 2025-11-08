@@ -122,4 +122,135 @@ PrepMate/
 │   └── ...
 │
 └── README.md
->>>>>>> 44f723b (Fixed README formatting and structure):Readme.md
+
+```
+
+
+
+## 🖥️ How to Run Locally
+
+Follow these simple steps to set up the project locally:
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/prepmate.git
+cd prepmate
+```
+
+### 2️⃣ Run the Frontend
+
+```bash
+cd prepmate
+npm install
+npm start
+```
+
+The frontend will run at:
+👉 `http://localhost:3000`
+
+### 3️⃣ Run the Backend
+
+Open another terminal:
+
+```bash
+cd prepmate-backend
+npm install
+npm start
+```
+
+The backend will run at:
+👉 `http://localhost:5000`
+
+---
+
+## 🧠 Future Enhancements
+
+We’re continuously improving **PrepMate** to make it more interactive and user-friendly.
+Upcoming features include:
+
+1. 📚 Adding **more subjects** and topic coverage.
+2. 🗣️ Integrating **speech-to-text** and **text-to-speech APIs** to create a real interview-like experience.
+3. 🧵 Making **resources dynamically update** based on user feedback and ratings.
+4. 💼 Adding a **job search and referral** section:
+
+   * Suggest jobs based on uploaded resumes.
+   * Provide referral contact links for networking.
+
+---
+
+## 💡 Vision
+
+**PrepMate** aims to be the **go-to AI-powered career assistant**, combining:
+
+* Smart **AI Interviews** to simulate real-world experiences.
+* **Quizzes** to strengthen technical knowledge.
+* **Resume analysis** for personalized improvements.
+* **Gamified learning** through the Resources section.
+
+Our goal is to empower students and professionals with personalized insights to **Practice, Improve, and Succeed**.
+
+---
+
+## ⚙️ Challenges & Solutions
+
+### 🔸 Challenge 1: Realistic AI Interaction
+
+* **Problem:** Maintaining a real-time feel during interviews.
+* **Solution:** Used a fast and versatile LLaMA model with optimized prompt handling to reduce response delays.
+
+### 🔸 Challenge 2: Resume Parsing & ATS Scoring
+
+* **Problem:** Extracting data from multiple resume formats.
+* **Solution:** Implemented preprocessing and keyword analysis to ensure consistent LLM evaluation.
+
+### 🔸 Challenge 3: Resource Engagement
+
+* **Problem:** Keeping users motivated to learn.
+* **Solution:** Adopted a **Duolingo-inspired** progression system with interactive learning and “revision marking”.
+
+---
+
+## 🧪 Testing & Validation
+
+To ensure a smooth and accurate user experience:
+
+* **Frontend Testing:** Conducted using manual test cases for all 4 modules (UI flow, inputs, and responses).
+* **Backend Testing:** Verified API endpoints using Postman for CRUD and data consistency.
+* **LLM Validation:** Tested AI responses across different subjects and difficulty levels.
+* **Resume Module:** Validated ATS scores and keyword matches against multiple job descriptions.
+
+---
+
+## 🌟 Features & Functionality Summary
+
+| Module              | Description                      | Key Features                                  |
+| ------------------- | -------------------------------- | --------------------------------------------- |
+| **AI Interview**    | Simulated AI-based interviews    | Text & speech input, scoring, detailed report |
+| **Quiz**            | Practice quizzes for learning    | MCQs, explanations, instant feedback          |
+| **Resume Analysis** | Smart JD-based resume evaluation | ATS score, missing keywords, improvement tips |
+| **Resources**       | Learning platform                | YouTube + web resources, progress tracking    |
+
+---
+
+## 👨‍💻 Contributors
+
+* **Team PrepMate**
+
+  * 22BIT0197
+  * 22BIT0248
+  * 22BIT0288
+
+---
+
+## 🏁 License
+
+This project is licensed under the **MIT License** — feel free to use, modify, and share it with proper attribution.
+
+---
+
+✨ *PrepMate – Practice. Improve. Succeed.* ✨
+
+---
+
+
